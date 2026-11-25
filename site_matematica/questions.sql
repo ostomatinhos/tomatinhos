@@ -1,10 +1,11 @@
 
-CREATE DATABASE matriz;
 
-USE matriz
+CREATE DATABASE IF NOT EXISTS questoes;
 
-CREATE TABLE questoes (
-    id INT IDENTITY(1,1) PRIMARY KEY,
+USE questoes;
+
+CREATE TABLE IF NOT EXISTS questoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
     pergunta TEXT NOT NULL,
     alternativaA VARCHAR(255) NOT NULL,
     alternativaB VARCHAR(255) NOT NULL,
@@ -13,13 +14,6 @@ CREATE TABLE questoes (
     alternativaE VARCHAR(255) NOT NULL,
     resposta_correta CHAR(1) NOT NULL
 );
-
-
-INSERT INTO questoes
-(pergunta, alternativaA, alternativaB, alternativaC, alternativaD, alternativaE, resposta_correta)
-VALUES
-
-USE matriz;
 
 INSERT INTO questoes
 (pergunta, alternativaA, alternativaB, alternativaC,
@@ -46,4 +40,4 @@ VALUES
 ('Pergunta 19', 'A19', 'B19', 'C19', 'D19', 'E19', 'D'),
 ('Pergunta 20', 'A20', 'B20', 'C20', 'D20', 'E20', 'E');
 
-select *from questoes
+SELECT * FROM questoes;
