@@ -6,7 +6,7 @@ exigirAluno();
 
 $raiz = '../';
 
-// Só corrige se veio do formulário e se existe uma prova sorteada.
+
 if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !isset($_SESSION['prova'])) {
     header('Location: prova1.php');
     exit;
@@ -16,7 +16,7 @@ $respostas = $_POST['resposta'] ?? [];
 $acertos = 0;
 $resultados = [];
 
-// Percorre as questões sorteadas (guardadas na sessão) e compara com o gabarito do BANCO.
+
 foreach ($_SESSION['prova'] as $idQuestao) {
     $stmt = $conexao->prepare("SELECT * FROM questoes WHERE id = ?");
     $stmt->execute([$idQuestao]);
@@ -43,7 +43,7 @@ $total = count($resultados);
 $erros = $total - $acertos;
 $nota  = $total > 0 ? $acertos * 10 / $total : 0;
 
-// Apaga a prova da sessão: não dá para enviar a mesma prova de novo.
+
 unset($_SESSION['prova']);
 
 require_once '../includes/header.php';

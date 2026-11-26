@@ -6,14 +6,13 @@ exigirAluno();
 
 $raiz = '../';
 
-// Sorteia as 10 questões só uma vez e guarda os ids na sessão.
-// Assim as questões não mudam até o aluno enviar a prova.
+
 if (!isset($_SESSION['prova'])) {
     $stmt = $conexao->query("SELECT id FROM questoes ORDER BY RAND() LIMIT 10");
     $_SESSION['prova'] = $stmt->fetchAll(PDO::FETCH_COLUMN);
 }
 
-// Busca no banco cada questão sorteada
+
 $questoes = [];
 foreach ($_SESSION['prova'] as $idQuestao) {
     $stmt = $conexao->prepare("SELECT * FROM questoes WHERE id = ?");
