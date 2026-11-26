@@ -1,0 +1,18 @@
+COMO INSTALAR (XAMPP)
+
+1. Abra o XAMPP e clique em "Start" no Apache e no MySQL.
+
+2. Copie a pasta "site_matematica" para dentro de:  C:\xampp\htdocs\
+   Confira que o arquivo index.php fica em:  C:\xampp\htdocs\site_matematica\index.php
+   (e NÃO em htdocs\site_matematica\site_matematica\index.php)
+
+3. Abra  http://localhost/phpmyadmin
+   - Clique na aba "SQL"
+   - Abra o arquivo database.sql com o Bloco de Notas, copie TUDO e cole lá
+   - Clique em "Executar"
+   Isso cria o banco "simulados_db" com as tabelas "usuarios" e "questoes".
+
+4. Abra o site:  http://localhost/site_matematica/index.php
+
+5. Cadastre um professor:  http://localhost/site_matematica/professor/cadastro.php
+   Cadastre um aluno:      http://localhost/site_matematica/aluno/cadastro.php
