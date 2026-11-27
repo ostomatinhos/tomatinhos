@@ -5,10 +5,10 @@ ___ é um curso de matemática fictício focado em algebra linear, desenvolvido 
 ## Membros
 
 - Benjamin Felippe (Machikko)
-- Ricardo Godoy
-- Enzo Rafael
-- Rael 
-- Nicolas Camargo Cecato
+- Ricardo Godoy (rick8011)
+- Enzo Rafael (enzo.cardoso)
+- Rhael Machado Meireles (parrafagit)
+- Nicolas Camargo Cecato autista
 
 ## Objetivo 
 
