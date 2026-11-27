@@ -2,7 +2,7 @@
 require_once __DIR__ . '/../config/auth.php';
 require_once __DIR__ . '/../config/conexao.php';
 
-// $raiz é definido em cada página: '' em index.php e '../' nas pastas aluno/ e professor/
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">

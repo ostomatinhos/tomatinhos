@@ -1,5 +1,4 @@
 <?php
-// Sessão e controle de acesso (sem HTML).
 
 session_start();
 
@@ -13,7 +12,7 @@ function ehProfessor()
     return isset($_SESSION['usuario_tipo']) && $_SESSION['usuario_tipo'] === 'professor';
 }
 
-// Chame no início das páginas do aluno. Se não for aluno, vai para aluno/login.php
+
 function exigirAluno()
 {
     if (!ehAluno()) {
@@ -22,7 +21,7 @@ function exigirAluno()
     }
 }
 
-// Chame no início das páginas do professor. Se não for professor, vai para professor/login.php
+
 function exigirProfessor()
 {
     if (!ehProfessor()) {
@@ -31,7 +30,7 @@ function exigirProfessor()
     }
 }
 
-// Quantas aulas o aluno logado já finalizou (0 a 3).
+
 function aulasConcluidas($conexao)
 {
     $stmt = $conexao->prepare("SELECT aulas_concluidas FROM usuarios WHERE id = ?");

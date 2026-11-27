@@ -13,7 +13,7 @@ if ($concluidas < 2) {
     exit;
 }
 
-// Clicou em "Finalizar aula"
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($concluidas == 2) {
         $stmt = $conexao->prepare("UPDATE usuarios SET aulas_concluidas = 3 WHERE id = ?");

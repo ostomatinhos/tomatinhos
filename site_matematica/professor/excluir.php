@@ -21,7 +21,7 @@ if (!$questao) {
     exit;
 }
 
-// Só exclui quando o professor confirma (botão da página de confirmação)
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $conexao->prepare("DELETE FROM questoes WHERE id = ?");
     $stmt->execute([$id]);
