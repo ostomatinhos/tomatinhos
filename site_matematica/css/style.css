@@ -1,24 +1,101 @@
-body { font-family: Arial, sans-serif; margin: 0; color: #222; }
-header { background: #eee; border-bottom: 1px solid #ccc; padding: 10px 20px; }
-.logo { font-weight: bold; font-size: 18px; color: #222; text-decoration: none; margin-right: 20px; }
-nav { display: inline; }
-nav a, nav span { margin-right: 12px; }
-nav a { color: #0645ad; }
-nav .concluida { color: #1a7f37; }
-nav .bloqueada { color: #999; }
-main { max-width: 900px; margin: 20px auto; padding: 0 20px; }
-footer { text-align: center; color: #777; margin: 40px 0 20px; }
-.erro { background: #fdecea; border: 1px solid #d33; padding: 8px; }
-.sucesso { background: #e8f5e9; border: 1px solid #2e7d32; padding: 8px; }
-.cartao { border: 1px solid #ccc; padding: 0 15px; margin-bottom: 10px; }
-.btn, button { padding: 6px 12px; cursor: pointer; }
-a.btn { display: inline-block; border: 1px solid #888; background: #f4f4f4; color: #222; text-decoration: none; }
-label { display: block; margin-top: 10px; }
-input[type=text], input[type=email], input[type=password], select, textarea { width: 100%; max-width: 400px; padding: 5px; }
-textarea { height: 80px; }
-table { border-collapse: collapse; width: 100%; }
-th, td { border: 1px solid #ccc; padding: 6px; text-align: left; vertical-align: top; }
-.questao { margin-bottom: 20px; }
-.questao label { margin-top: 4px; }
-.certa { color: #1a7f37; }
-.errada { color: #c62828; }
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 0; color: #222; 
+}
+header { 
+    background: #eee; 
+    border-bottom: 1px solid #ccc; 
+    padding: 10px 20px; 
+}
+.logo { 
+    font-weight: bold; 
+    font-size: 18px;
+    color: #222; 
+    text-decoration: none; 
+    margin-right: 20px; 
+}
+nav { 
+    display: inline; 
+}
+nav a, nav span { 
+    margin-right: 12px; 
+}
+nav a { 
+    color: #0645ad; 
+}
+nav .concluida { 
+    color: #1a7f37; 
+}
+nav .bloqueada { 
+    color: #999; 
+}
+main { 
+    max-width: 900px;
+     margin: 20px auto;
+      padding: 0 20px;
+     }
+footer { 
+    text-align: center;
+     color: #777; 
+     margin: 40px 0 20px; 
+    }
+.erro { 
+    background: #fdecea; 
+    border: 1px solid #d33; 
+    padding: 8px; 
+}
+.sucesso { 
+    background: #e8f5e9;
+     border: 1px solid #2e7d32;
+      padding: 8px; 
+    }
+.cartao {
+     border: 1px solid #ccc;
+      padding: 0 15px; 
+      margin-bottom: 10px;
+    }
+.btn, button { 
+    padding: 6px 12px;
+     cursor: pointer;
+ }
+a.btn {
+     display: inline-block;
+      border: 1px solid #888; 
+      background: #f4f4f4; 
+      color: #222; 
+      text-decoration: none; 
+    }
+label {
+     display: block;
+      margin-top: 10px; 
+    }
+input[type=text], input[type=email], input[type=password], select, textarea { 
+    width: 100%; 
+    max-width: 400px; 
+    padding: 5px;
+ }
+textarea {
+     height: 80px;
+     }
+table {
+     border-collapse: collapse;
+      width: 100%;
+    }
+th, td { 
+    border: 1px solid #ccc;
+     padding: 6px; 
+     text-align: left;
+      vertical-align: top;
+     }
+.questao { 
+    margin-bottom: 20px;
+ }
+.questao label { 
+    margin-top: 4px; 
+}
+.certa { 
+    color: #1a7f37;
+ }
+.errada { 
+    color: #c62828;
+ }

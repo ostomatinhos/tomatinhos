@@ -5,6 +5,7 @@ require_once 'includes/header.php';
 ?>
 
 <h1>Simulados de Matemática</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima aliquam nobis voluptatibus eius iure labore, aut quasi a quibusdam ducimus ex dicta suscipit ab doloremque quo animi reprehenderit consequatur?
 
 <p>
     Plataforma para aprender matemática e testar o que você aprendeu.
